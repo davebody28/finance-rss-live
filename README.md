@@ -12,3 +12,11 @@ Wymagany Docker i docker-compose.
 
 - Backend: http://localhost:8000/news/latest
 - Frontend: http://localhost:8080
+
+Jak działa po uruchomieniu
+* Backend (FastAPI) odpyta RSS co 5 minut i trzyma w pamięci JSON.
+* Frontend (HTML + JS + Nginx) odpyta API co 30s i wyświetli newsy live.
+* Całość uruchamiasz jednym poleceniem:
+```
+docker-compose up -d
+```
