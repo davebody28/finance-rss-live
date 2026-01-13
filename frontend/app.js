@@ -1,5 +1,5 @@
 const container = document.getElementById("news-container");
-const API_URL = "http://localhost:8000/news/latest"; // zmień na IP NAS jeśli trzeba
+const API_URL = "http://backend:8000/news/latest"; // Docker network
 
 async function fetchNews() {
     try {
@@ -18,6 +18,5 @@ async function fetchNews() {
     }
 }
 
-// odświeżanie co 30 sekund
 fetchNews();
 setInterval(fetchNews, 30000);
