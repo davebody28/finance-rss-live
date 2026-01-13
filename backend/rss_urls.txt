@@ -1,2 +1,11 @@
-https://www.bankier.pl/rss/wiadomosci.xml
-https://www.money.pl/rss.xml
+# Polskie finansowe
+https://www.bankier.pl/rss/wiadomosci.xml                 # Bankier – ogólne wiadomości finansowe :contentReference[oaicite:1]{index=1}
+https://www.money.pl/rss/                                 # Money.pl – biznes i finanse :contentReference[oaicite:2]{index=2}
+https://www.pb.pl/rss                                    # Puls Biznesu – biznes, inwestycje :contentReference[oaicite:3]{index=3}
+
+# Europejskie / globalne
+https://www.economist.com/sections/business-finance/rss.xml   # The Economist – business & finance (RSS) :contentReference[oaicite:4]{index=4}
+https://www.economist.com/finance-and-economics/rss.xml      # The Economist – finance & economics (RSS) :contentReference[oaicite:5]{index=5}
+
+# Global/US – Wall Street Journal
+https://feeds.content.dowjones.com/rss/wsj/WSJMarketsAndFinance    # WSJ – Markets & Finance RSS (często generowany, zależny od RSS usług; może wymagać testów) :contentReference[oaicite:6]{index=6}
