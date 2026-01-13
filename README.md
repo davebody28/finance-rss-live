@@ -1,22 +1,13 @@
 # Finance RSS Live
 
-Prosty serwis wyświetlający najważniejsze newsy finansowe live.
+Serwis wyświetlający najważniejsze newsy finansowe live.
 
 ## Uruchomienie
 
-Wymagany Docker i docker-compose.
-
-1. Skopiuj RSS-y do `backend/rss_urls.txt`.
-2. Uruchom całość:
+1. Zainstaluj Docker i docker-compose.
+2. Sprawdź, czy w backend/rss_urls.txt masz RSS-y, które chcesz.
+3. Uruchom:
    docker-compose up -d
 
 - Backend: http://localhost:8000/news/latest
 - Frontend: http://localhost:8080
-
-Jak działa po uruchomieniu
-* Backend (FastAPI) odpyta RSS co 5 minut i trzyma w pamięci JSON.
-* Frontend (HTML + JS + Nginx) odpyta API co 30s i wyświetli newsy live.
-* Całość uruchamiasz jednym poleceniem:
-```
-docker-compose up -d
-```
