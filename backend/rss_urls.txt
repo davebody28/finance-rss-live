@@ -1,11 +1,24 @@
-# Polskie finansowe
-https://www.bankier.pl/rss/wiadomosci.xml                 # Bankier – ogólne wiadomości finansowe :contentReference[oaicite:1]{index=1}
-https://www.money.pl/rss/                                 # Money.pl – biznes i finanse :contentReference[oaicite:2]{index=2}
-https://www.pb.pl/rss                                    # Puls Biznesu – biznes, inwestycje :contentReference[oaicite:3]{index=3}
+# Polskie
+https://www.bankier.pl/rss/wiadomosci.xml
+https://www.money.pl/rss/
+https://www.pb.pl/rss
 
-# Europejskie / globalne
-https://www.economist.com/sections/business-finance/rss.xml   # The Economist – business & finance (RSS) :contentReference[oaicite:4]{index=4}
-https://www.economist.com/finance-and-economics/rss.xml      # The Economist – finance & economics (RSS) :contentReference[oaicite:5]{index=5}
+# Global – The Economist
+https://www.economist.com/sections/business-finance/rss.xml
+https://www.economist.com/finance-and-economics/rss.xml
 
-# Global/US – Wall Street Journal
-https://feeds.content.dowjones.com/rss/wsj/WSJMarketsAndFinance    # WSJ – Markets & Finance RSS (często generowany, zależny od RSS usług; może wymagać testów) :contentReference[oaicite:6]{index=6}
+# US / Global Markets
+https://feeds.content.dowjones.com/rss/wsj/WSJMarketsAndFinance
+
+# Reuters – biznes / finanse
+https://www.reutersagency.com/feed/?taxonomy=best-sectors&post_type=best
+
+# Bloomberg – Markets
+https://www.bloomberg.com/feed/podcast/etf-report.xml
+
+# Google News – Financial
+https://news.google.com/rss/search?q=finance&hl=en-US&gl=US&ceid=US:en
+
+# RSSHub (opcjonalnie dla WSJ/The Economist, pewniejsze)
+# http://<RSSHUB_IP>:1200/wsj/markets
+# http://<RSSHUB_IP>:1200/economist/business-finance
