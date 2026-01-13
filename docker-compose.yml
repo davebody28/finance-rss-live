@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  backend:
+    build: ./backend
+    container_name: rss_backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend/rss_urls.txt:/app/rss_urls.txt
+    command: uvicorn main:app --host 0.0.0.0 --port 8000
+
+  frontend:
+    image: nginx:alpine
+    container_name: rss_frontend
+    ports:
+      - "8080:80"
+    volumes:
+      - ./frontend:/usr/share/nginx/html:ro
