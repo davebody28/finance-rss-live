@@ -19,6 +19,13 @@ https://www.bloomberg.com/feed/podcast/etf-report.xml
 # Google News – Financial
 https://news.google.com/rss/search?q=finance&hl=en-US&gl=US&ceid=US:en
 
+# Tech / Industry
+https://news.google.com/rss/search?q=technology%20industry&hl=en-US&gl=US&ceid=US:en
+https://news.google.com/rss/search?q=semiconductors&hl=en-US&gl=US&ceid=US:en
+https://www.theverge.com/rss/index.xml
+https://www.wired.com/feed/rss
+https://feeds.arstechnica.com/arstechnica/index
+
 # RSSHub (opcjonalnie dla WSJ/The Economist, pewniejsze)
 # http://<RSSHUB_IP>:1200/wsj/markets
 # http://<RSSHUB_IP>:1200/economist/business-finance

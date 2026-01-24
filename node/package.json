@@ -1,0 +1,13 @@
+{
+  "name": "finance-rss-node",
+  "version": "1.0.0",
+  "description": "Node.js API for managing RSS feeds and proxying news.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
