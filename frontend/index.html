@@ -6,8 +6,30 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Najważniejsze newsy finansowe (live)</h1>
+<header class="page-header">
+  <div>
+    <h1>Finance & Tech RSS Live</h1>
+    <p class="subtitle">Najświeższe newsy z finansów i technologii — automatycznie odświeżane.</p>
+  </div>
+  <div class="status">
+    <span id="last-updated">Ładowanie...</span>
+  </div>
+</header>
+
+<section class="filters">
+  <label>
+    Strefa
+    <select id="category-filter"></select>
+  </label>
+  <label>
+    Dostawca
+    <select id="provider-filter"></select>
+  </label>
+  <button id="reset-filters" type="button">Wyczyść filtry</button>
+</section>
+
 <div id="news-container"></div>
+<p id="empty-state" class="empty-state"></p>
 <script src="app.js"></script>
 </body>
 </html>

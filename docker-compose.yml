@@ -10,6 +10,16 @@ services:
       - ./backend/rss_urls.txt:/app/rss_urls.txt
     command: uvicorn main:app --host 0.0.0.0 --port 8000
 
+  gateway:
+    build: ./gateway
+    container_name: rss_gateway
+    environment:
+      - BACKEND_URL=http://backend:8000
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
   frontend:
     image: nginx:alpine
     container_name: rss_frontend

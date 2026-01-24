@@ -1,24 +1,20 @@
-# Polskie
-https://www.bankier.pl/rss/wiadomosci.xml
-https://www.money.pl/rss/
-https://www.pb.pl/rss
+# Format:
+# Kategoria | Dostawca | URL
 
-# Global – The Economist
-https://www.economist.com/sections/business-finance/rss.xml
-https://www.economist.com/finance-and-economics/rss.xml
+# Finanse (PL)
+Finanse | Bankier | https://www.bankier.pl/rss/wiadomosci.xml
+Finanse | Money.pl | https://www.money.pl/rss/
+Finanse | Puls Biznesu | https://www.pb.pl/rss
 
-# US / Global Markets
-https://feeds.content.dowjones.com/rss/wsj/WSJMarketsAndFinance
+# Finanse (Global)
+Finanse | Reuters Business | https://www.reutersagency.com/feed/?taxonomy=best-sectors&post_type=best
+Finanse | WSJ Markets | https://feeds.content.dowjones.com/rss/wsj/WSJMarketsAndFinance
+Finanse | The Economist Finance | https://www.economist.com/finance-and-economics/rss.xml
+Finanse | Google News Finance | https://news.google.com/rss/search?q=finance&hl=en-US&gl=US&ceid=US:en
 
-# Reuters – biznes / finanse
-https://www.reutersagency.com/feed/?taxonomy=best-sectors&post_type=best
-
-# Bloomberg – Markets
-https://www.bloomberg.com/feed/podcast/etf-report.xml
-
-# Google News – Financial
-https://news.google.com/rss/search?q=finance&hl=en-US&gl=US&ceid=US:en
-
-# RSSHub (opcjonalnie dla WSJ/The Economist, pewniejsze)
-# http://<RSSHUB_IP>:1200/wsj/markets
-# http://<RSSHUB_IP>:1200/economist/business-finance
+# Technologia
+Technologia | The Verge | https://www.theverge.com/rss/index.xml
+Technologia | TechCrunch | https://techcrunch.com/feed/
+Technologia | Ars Technica | https://feeds.arstechnica.com/arstechnica/index
+Technologia | Wired | https://www.wired.com/feed/rss
+Technologia | Google News Tech | https://news.google.com/rss/search?q=technology&hl=en-US&gl=US&ceid=US:en
