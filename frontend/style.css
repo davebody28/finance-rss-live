@@ -1,6 +1,109 @@
-body { font-family: Arial, sans-serif; margin: 20px; background: #f4f4f4; }
-h1 { color: #333; }
-#news-container { margin-top: 20px; }
-.news-item { padding: 10px; margin-bottom: 10px; background: white; border-radius: 5px; }
-.news-item a { text-decoration: none; color: #0077cc; }
-.news-item span { color: #555; font-size: 0.9em; }
+body {
+  font-family: "Inter", Arial, sans-serif;
+  margin: 0;
+  background: #f4f6f9;
+  color: #1f2a37;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 32px 12px;
+  gap: 16px;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.page-header h1 {
+  margin: 0 0 6px;
+}
+
+.subtitle {
+  margin: 0;
+  color: #6b7280;
+}
+
+.status {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.filters {
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+  padding: 16px 32px;
+  background: white;
+  border-bottom: 1px solid #e5e7eb;
+  flex-wrap: wrap;
+}
+
+.filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: #4b5563;
+}
+
+.filters select,
+.filters button {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 0.95rem;
+}
+
+.filters button {
+  background: #1f2937;
+  color: white;
+  cursor: pointer;
+}
+
+#news-container {
+  padding: 24px 32px;
+}
+
+.news-item {
+  padding: 16px;
+  margin-bottom: 12px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+}
+
+.news-item a {
+  text-decoration: none;
+  color: #2563eb;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.news-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.badge {
+  background: #e0f2fe;
+  color: #0369a1;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.meta {
+  margin-top: 8px;
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+.empty-state {
+  padding: 0 32px 32px;
+  color: #6b7280;
+}
