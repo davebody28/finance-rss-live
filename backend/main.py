@@ -3,6 +3,8 @@ from fastapi.middleware.cors import CORSMiddleware
 import feedparser
 from apscheduler.schedulers.background import BackgroundScheduler
 from urllib.parse import urlparse
+import os
+from pathlib import Path
 
 app = FastAPI()
 
@@ -14,17 +16,23 @@ app.add_middleware(
 )
 
 news_data = []
+RSS_URLS_PATH = Path(os.environ.get("RSS_URLS_PATH", "rss_urls.txt"))
+
+
+def load_rss_urls():
+    if not RSS_URLS_PATH.exists():
+        return []
+    return [
+        line.strip()
+        for line in RSS_URLS_PATH.read_text(encoding="utf-8").splitlines()
+        if line.strip() and not line.startswith("#")
+    ]
 
 def fetch_rss():
     global news_data
     news = []
 
-    with open("rss_urls.txt", "r") as f:
-        urls = [
-            line.strip()
-            for line in f.readlines()
-            if line.strip() and not line.startswith("#")
-        ]
+    urls = load_rss_urls()
 
     for url in urls:
         feed = feedparser.parse(url)

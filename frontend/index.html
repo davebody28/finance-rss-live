@@ -6,8 +6,34 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Najważniejsze newsy finansowe (live)</h1>
-<div id="news-container"></div>
+<header>
+    <h1>Najważniejsze newsy finansowe (live)</h1>
+    <p>Automatycznie odświeżane newsy z finansów i technologii.</p>
+</header>
+
+<section class="toolbar">
+    <div class="filters">
+        <input id="search-input" type="text" placeholder="Filtruj po tytule lub źródle">
+        <select id="source-filter">
+            <option value="">Wszystkie źródła</option>
+        </select>
+        <button id="refresh-btn" type="button">Odśwież teraz</button>
+    </div>
+</section>
+
+<section class="feeds">
+    <h2>Zarządzanie feedami</h2>
+    <form id="feed-form">
+        <input id="feed-input" type="url" placeholder="https://example.com/rss.xml" required>
+        <button type="submit">Dodaj feed</button>
+    </form>
+    <ul id="feed-list"></ul>
+</section>
+
+<section class="news">
+    <h2>Aktualne wiadomości</h2>
+    <div id="news-container"></div>
+</section>
 <script src="app.js"></script>
 </body>
 </html>

@@ -1,6 +1,143 @@
-body { font-family: Arial, sans-serif; margin: 20px; background: #f4f4f4; }
-h1 { color: #333; }
-#news-container { margin-top: 20px; }
-.news-item { padding: 10px; margin-bottom: 10px; background: white; border-radius: 5px; }
-.news-item a { text-decoration: none; color: #0077cc; }
-.news-item span { color: #555; font-size: 0.9em; }
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: #f4f6f8;
+    color: #1e1e1e;
+}
+
+header {
+    padding: 24px 32px 12px;
+    background: #0b1f33;
+    color: #fff;
+}
+
+header h1 {
+    margin: 0 0 8px;
+}
+
+header p {
+    margin: 0;
+    opacity: 0.85;
+}
+
+section {
+    padding: 20px 32px;
+}
+
+.toolbar {
+    background: #fff;
+    border-bottom: 1px solid #e2e6ea;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.filters input,
+.filters select,
+.filters button,
+#feed-form input,
+#feed-form button {
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid #c8d0d8;
+    font-size: 14px;
+}
+
+.filters button,
+#feed-form button {
+    background: #0b5bd3;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+.filters button:hover,
+#feed-form button:hover {
+    background: #0948a6;
+}
+
+.feeds {
+    background: #fdfdfd;
+}
+
+#feed-form {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+
+#feed-form input {
+    min-width: 280px;
+    flex: 1;
+}
+
+#feed-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 8px;
+}
+
+#feed-list li {
+    background: #fff;
+    border: 1px solid #e2e6ea;
+    padding: 10px 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    word-break: break-all;
+}
+
+#feed-list button {
+    background: #d63638;
+    border: none;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#feed-list button:hover {
+    background: #b02b2d;
+}
+
+.news {
+    background: #f4f6f8;
+}
+
+#news-container {
+    display: grid;
+    gap: 12px;
+}
+
+.news-item {
+    padding: 14px 16px;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #e2e6ea;
+}
+
+.news-item a {
+    text-decoration: none;
+    color: #0b5bd3;
+    font-weight: 600;
+}
+
+.news-item a:hover {
+    text-decoration: underline;
+}
+
+.news-item .meta {
+    display: flex;
+    gap: 16px;
+    margin-top: 6px;
+    font-size: 12px;
+    color: #5a6675;
+}

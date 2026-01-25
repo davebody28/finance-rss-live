@@ -7,8 +7,21 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ./backend/rss_urls.txt:/app/rss_urls.txt
+      - ./backend/rss_urls.txt:/data/rss_urls.txt
+    environment:
+      - RSS_URLS_PATH=/data/rss_urls.txt
     command: uvicorn main:app --host 0.0.0.0 --port 8000
+
+  node:
+    build: ./node
+    container_name: rss_node
+    volumes:
+      - ./backend/rss_urls.txt:/data/rss_urls.txt
+    environment:
+      - RSS_URLS_PATH=/data/rss_urls.txt
+      - PYTHON_BACKEND_URL=http://backend:8000/news/latest
+    depends_on:
+      - backend
 
   frontend:
     image: nginx:alpine
@@ -17,3 +30,6 @@ services:
       - "8080:80"
     volumes:
       - ./frontend:/usr/share/nginx/html:ro
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - node
